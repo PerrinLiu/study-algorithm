@@ -1,11 +1,6 @@
 package study.leetcode.simple;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-
-import static study.utils.getTimeMillis;
 
 /**
  * 移动零点
@@ -13,7 +8,7 @@ import static study.utils.getTimeMillis;
  * @author llpy
  * @date 2024/04/20
  */
-public class MoveZero {
+public class MoveZero283 {
 //    283.移动零
 //            简单
 //    相关标签

@@ -8,7 +8,7 @@ import java.util.*;
  * @author llpy
  * @date 2024/04/20
  */
-public class RemoveDuplicates {
+public class RemoveDuplicates26 {
 //    26. 删除有序数组中的重复项
 //            简单
 //    相关标签
@@ -42,9 +42,9 @@ public class RemoveDuplicates {
     }
     public static int removeDuplicates(int[] nums) {
         int index = 0;
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[index] !=nums[i] ) {
-                nums[++index] = nums[i];
+        for (int num : nums) {
+            if (nums[index] !=num ) {
+                nums[++index] = num;
             }
         }
         return index + 1;
