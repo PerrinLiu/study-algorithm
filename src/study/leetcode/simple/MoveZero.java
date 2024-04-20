@@ -1,9 +1,11 @@
-package study.leetcode;
+package study.leetcode.simple;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+
+import static study.utils.getTimeMillis;
 
 /**
  * 移动零点
@@ -29,6 +31,9 @@ public class MoveZero {
 //            ，-231<=nums[i]<= 231-1
 //    进阶:你能尽量减少完成的操作次数吗?
 
+
+
+
     public static void main(String[] args){
         int[] nums = {0, 1, 0, 3, 12};
         moveZero(nums);
@@ -36,20 +41,15 @@ public class MoveZero {
     }
 
     private static void moveZero(int[] nums) {
-        List<Integer> zeroIndex = new ArrayList<>();
-        for (int num : nums) {
-            if (num != 0) {
-                zeroIndex.add(num);
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if(nums[i]!=0){
+                nums[index] = nums[i];
+                index++;
             }
         }
-        int size = zeroIndex.size();
-        for (int i = 0; i < nums.length; i++) {
-            if(size==0){
-                nums[i] =0;
-                continue;
-            }
-            nums[i] = zeroIndex.get(i);
-            size--;
+        for(int i=nums.length-1;i>=index;i--){
+            nums[i] = 0;
         }
     }
 }
