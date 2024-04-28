@@ -1,9 +1,8 @@
 package study.leetcode.simple;
 
 
-import study.StatisticsTime;
+import study.TimingTemplate;
 
-import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -59,13 +58,15 @@ public class A12IntToRoman {
 //    输出: "MCMXCIV"
 //    解释: M = 1000, CM = 900, XC = 90, IV = 4.
     public static void main(String[] args) {
-        StatisticsTime intToRoman = new intToRoman();
-        StatisticsTime intToRoman2 = new IntToRoman2();
+        TimingTemplate intToRoman = new intToRoman();
+        TimingTemplate intToRoman2 = new IntToRoman2();
         intToRoman.run(69999);
         intToRoman2.run(69999);
     }
 }
-class intToRoman extends StatisticsTime{
+
+//自己的
+class intToRoman extends TimingTemplate {
 
     @Override
     protected Object method(Object s) {
@@ -112,7 +113,8 @@ class intToRoman extends StatisticsTime{
     }
 }
 
-class IntToRoman2 extends StatisticsTime {
+//官方题解
+class IntToRoman2 extends TimingTemplate {
     int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
     String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 

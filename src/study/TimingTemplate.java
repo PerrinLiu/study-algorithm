@@ -6,7 +6,7 @@ package study;
  * @author llpy
  * @date 2024/04/20
  */
-public abstract class StatisticsTime {
+public abstract class TimingTemplate {
 
 	private long start;
 

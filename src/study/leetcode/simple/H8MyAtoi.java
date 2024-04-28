@@ -1,6 +1,6 @@
 package study.leetcode.simple;
 
-import study.StatisticsTime;
+import study.TimingTemplate;
 
 
 /**
@@ -70,14 +70,14 @@ public class H8MyAtoi {
 //    解析得到整数 4193 。
 //    由于 "4193" 在范围 [-231, 231 - 1] 内，最终结果为 4193 。
     public static void main(String[] args) {
-        StatisticsTime myAtoi = new myAtoi();
+        TimingTemplate myAtoi = new myAtoi();
         myAtoi.run("  words and 987");
     }
 
 
 }
 
-class myAtoi extends StatisticsTime {
+class myAtoi extends TimingTemplate {
     @Override
     protected Object method(Object obj) {
         String s = (String) obj;
