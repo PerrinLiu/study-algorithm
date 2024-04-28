@@ -16,13 +16,13 @@ import study.entity.ListNode;
  * @date 2024/04/20
  */
 
-public class AddTwoNumbers2 {
+public class B2AddTwoNumbers {
     public static void main(String[] args) {
 
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-        AddTwoNumbers2 addTwoNumbers2 = new AddTwoNumbers2();
-        ListNode listNode = addTwoNumbers2.addTwoNumbers(l1, l2);
+        B2AddTwoNumbers a2AddTwoNumbers2 = new B2AddTwoNumbers();
+        ListNode listNode = a2AddTwoNumbers2.addTwoNumbers(l1, l2);
         while (listNode != null) {
             System.out.println(listNode.val);
             listNode = listNode.next;

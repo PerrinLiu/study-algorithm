@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author llpy
  * @date 2024/04/20
  */
-public class MoveZero283 {
+public class B283MoveZero {
 //    283.移动零
 //            简单
 //    相关标签

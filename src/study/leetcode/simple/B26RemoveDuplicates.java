@@ -8,7 +8,7 @@ import java.util.*;
  * @author llpy
  * @date 2024/04/20
  */
-public class RemoveDuplicates26 {
+public class B26RemoveDuplicates {
 //    26. 删除有序数组中的重复项
 //            简单
 //    相关标签
