@@ -1,4 +1,4 @@
-package study.leetcode.simple;
+package study.leetcode.simple.oneFirst;
 
 /**
  * 最长之字形

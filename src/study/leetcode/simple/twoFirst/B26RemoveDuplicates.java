@@ -1,4 +1,4 @@
-package study.leetcode.simple;
+package study.leetcode.simple.twoFirst;
 
 import java.util.*;
 

@@ -1,10 +1,9 @@
-package study.leetcode.simple;
+package study.leetcode.simple.oneFirst;
 
 import study.TimingTemplate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 
 /**
