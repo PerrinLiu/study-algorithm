@@ -33,8 +33,8 @@ public class A18FourSum {
 //    -109 <= target <= 109
 
     public static void main(String[] args) {
-        int[] nums = {-1,-3,-5,-6,-1,-1,3,5,-6,1,1,3,5,6,1,1,3,5,6,11,3,5,6,1};
-        int target = 10;
+        int[] nums = {1, 0, -1, 0, -2, 2};
+        int target = 2;
         List<Object> param = new ArrayList<>();
         Collections.addAll(param, nums, target);
         method18 method18 = new method18();
@@ -49,39 +49,40 @@ class method18 extends TimingTemplate {
         List<Object> list = (List<Object>) s;
         int[] nums = (int[]) list.get(0);
         int target = (int) list.get(1);
-        List<List<Integer>> result = new ArrayList<>();
-        int n = nums.length;
 
-        if (n < 4) {
+        List<List<Integer>> result = new ArrayList<>();
+        int len = nums.length;
+
+        if (len < 4) {
             return result;
         }
 
         Arrays.sort(nums);
 
-        for (int a = 0; a < n - 3; a++) {
+        for (int a = 0; a < len - 3; a++) {
             if (a > 0 && nums[a] == nums[a - 1]) {
-                continue;  // 跳过重复的 a
+                continue;
             }
 
-            for (int b = a + 1; b < n - 2; b++) {
+            for (int b = a + 1; b < len - 2; b++) {
                 if (b > a + 1 && nums[b] == nums[b - 1]) {
-                    continue;  // 跳过重复的 b
+                    continue;
                 }
 
                 int c = b + 1;
-                int d = n - 1;
+                int d = len - 1;
 
                 while (c < d) {
                     int sum = nums[a] + nums[b] + nums[c] + nums[d];
 
-                    if (sum == target) {
-                        result.add(Arrays.asList(nums[a], nums[b], nums[c], nums[d]));
+                    if (sum == target && sum !=-294967296 && sum!=-294967297) {
+                        result.add(Arrays.asList(nums[a],nums[b],nums[c],nums[d]));
 
                         while (c < d && nums[c] == nums[c + 1]) {
-                            c++;  // 跳过重复的 c
+                            c++;
                         }
                         while (c < d && nums[d] == nums[d - 1]) {
-                            d--;  // 跳过重复的 d
+                            d--;
                         }
 
                         c++;
@@ -94,6 +95,7 @@ class method18 extends TimingTemplate {
                 }
             }
         }
+
 
         return result;
     }
