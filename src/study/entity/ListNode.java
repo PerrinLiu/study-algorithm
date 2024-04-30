@@ -2,9 +2,17 @@ package study.entity;
 
 /**
  * 列表节点
+ * Definition for singly-linked list.
+ * public class ListNode {
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
  *
  * @author llpy
- * @date 2024/04/20
+ * @date 2024/04/30
  */
 public class ListNode {
     public int val;
