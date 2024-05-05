@@ -1,9 +1,6 @@
-package study.leetcode.simple.oneFirst;
+package study.leetcode.oneFirst;
 
-import study.TimingTemplate;
 import study.entity.ListNode;
-
-import java.util.List;
 
 /**
  * a19从末端移除第n个
@@ -37,20 +34,37 @@ public class A19RemoveNthFromEnd {
 //            0 <= Node.val <= 100
 //            1 <= n <= sz
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
-        System.out.println(removeNthFromEnd(l1, 2));
+        ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6))))));
+        ListNode listNode = removeNthFromEnd(l1, 2);
+        System.out.println(listNode);
     }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode listNode = new ListNode();
         ListNode cursor = listNode;
+        if(head==null){
+           return listNode.next;
+        }
         int i = 0;
-        while(head.next!=null){
+        while(head!=null){
             i++;
-            cursor = head.next;
+            cursor.next = new ListNode(head.val);
+            cursor = cursor.next;
+            head = head.next;
+        }
+        int tag = i - n;
+        ListNode result = new ListNode();
+        cursor = result;
+        listNode = listNode.next;
+        while(listNode!=null){
+            if(tag--!=0){
+                cursor.next = new ListNode(listNode.val);
+                cursor = cursor.next;
+            }
+            listNode = listNode.next;
         }
 
-        return head;
+        return result.next;
     }
 }
 

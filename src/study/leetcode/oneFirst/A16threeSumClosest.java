@@ -1,4 +1,4 @@
-package study.leetcode.simple.oneFirst;
+package study.leetcode.oneFirst;
 
 import study.TimingTemplate;
 

@@ -1,4 +1,4 @@
-package study.leetcode.simple.twoFirst;
+package study.leetcode.twoFirst;
 
 /**
  * 拆下元件27
