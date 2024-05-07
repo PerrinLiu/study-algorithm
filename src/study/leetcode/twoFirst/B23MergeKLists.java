@@ -1,5 +1,11 @@
 package study.leetcode.twoFirst;
 
+import study.entity.ListNode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * b23合并klists
  *
@@ -27,7 +33,7 @@ public class B23MergeKLists {
 //    输入：lists = []
 //    输出：[]
 
-//    示例 3：
+    //    示例 3：
 //    输入：lists = [[]]
 //    输出：[]
 //
@@ -38,4 +44,29 @@ public class B23MergeKLists {
 //            -10^4 <= lists[i][j] <= 10^4
 //    lists[i] 按 升序 排列
 //    lists[i].length 的总和不超过 10^4
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(2, new ListNode(5, new ListNode(8)));
+        ListNode l2 = new ListNode(1, new ListNode(6, new ListNode(7)));
+        ListNode l3 = new ListNode(3, new ListNode(6, new ListNode(7)));
+        ListNode[] listNodes = new ListNode[]{l1,l2,l3};
+        ListNode listNode = mergeKLists(listNodes);
+        System.out.println(listNode);
+    }
+    private static ListNode mergeKLists(ListNode[] lists) {
+        List<Integer> tag = new ArrayList<>();
+        for (ListNode list : lists) {
+            while(list!=null){
+                tag.add(list.val);
+                list = list.next;
+            }
+        }
+        Collections.sort(tag);
+        ListNode result = new ListNode();
+        ListNode cursor = result;
+        for (Integer i : tag) {
+            cursor.next = new ListNode(i);
+            cursor = cursor.next;
+        }
+        return result.next;
+    }
 }
