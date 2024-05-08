@@ -1,4 +1,4 @@
-package study.leetcode.simple;
+package study.leetcode.ehigtFirst;
 
 import study.TimingTemplate;
 
@@ -10,8 +10,7 @@ import study.TimingTemplate;
  * @date 2024/04/28
  */
 public class H8MyAtoi {
-    //    8. 字符串转换整数 (atoi)
-//    中等
+    //    8. 字符串转换整数 (atoi) 中等
 //            相关标签
 //    相关企业
 //    请你来实现一个 myAtoi(string s) 函数，使其能将字符串转换成一个 32 位有符号整数（类似 C/C++ 中的 atoi 函数）。
