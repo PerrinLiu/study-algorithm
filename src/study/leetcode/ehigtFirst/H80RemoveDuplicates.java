@@ -1,9 +1,6 @@
 package study.leetcode.ehigtFirst;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * h80删除重复项
@@ -18,7 +15,7 @@ public class H80RemoveDuplicates {
 //    不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
 //
 
-//
+    //
 //
 //    示例 1：
 //
@@ -37,20 +34,21 @@ public class H80RemoveDuplicates {
 //            -104 <= nums[i] <= 104
 //    nums 已按升序排列
     public static void main(String[] args) {
-        int[] nums = {0, 0, 1, 1, 1, 1, 2, 3, 3};
-        int i = removeDuplicates(nums);
+        int[] nums = {1, 1, 1, 2, 2, 2, 3, 3};
+        int i = removeDuplicates2(nums);
+        System.out.println(Arrays.toString(nums));
         System.out.println(i);
     }
 
-    public static int removeDuplicates(int[] nums){
+    public static int removeDuplicates(int[] nums) {
         TreeMap<Integer, Integer> hashMap = new TreeMap<>();
         for (int num : nums) {
-            if(!hashMap.containsKey(num)){
-                hashMap.put(num,1);
+            if (!hashMap.containsKey(num)) {
+                hashMap.put(num, 1);
                 continue;
             }
-            if( hashMap.get(num)<2){
-                hashMap.put(num,2);
+            if (hashMap.get(num) < 2) {
+                hashMap.put(num, 2);
             }
         }
         int index = 0;
@@ -62,5 +60,15 @@ public class H80RemoveDuplicates {
         }
 
         return index;
+    }
+
+    public static int removeDuplicates2(int[] nums) {
+        int result = 0;
+        for (int num : nums) {
+            if (result < 2 || num > nums[result - 2]) {
+                nums[result++] = num;
+            }
+        }
+        return result;
     }
 }
