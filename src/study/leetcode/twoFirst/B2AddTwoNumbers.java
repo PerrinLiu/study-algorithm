@@ -17,6 +17,7 @@ import study.entity.ListNode;
  */
 
 public class B2AddTwoNumbers {
+    //2.两数相加   中等
     public static void main(String[] args) {
 
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
