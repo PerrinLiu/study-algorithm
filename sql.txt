@@ -1,0 +1,36 @@
+select 
+    a.request_at as 'Day',
+    cast(sum(if(a.status!='completed',1,0))/count(*) as decimal(8,2)) as 'Cancellation Rate'
+from 
+    trips as a 
+    inner join users as b on a.client_id = b.users_id
+where 
+    b.role != 'partner' 
+    and b.banned ='no'
+    and a.request_at between '2013-10-01' and '2013-10-03'
+group by a.request_at
+
+
+
+select 
+    a.request_at as 'Day',
+    cast(sum(if(a.status!='completed',1,0))/count(*) as decimal(8,2)) as 'Cancellation Rate'
+from 
+    trips as a 
+where 
+    (a.client_id and a.driver_id) not in(select users_id from users where users.role !='partner' and users.banner ='no')
+    and a.request_at between '2013-10-01' and '2013-10-03'
+group by a.request_at
+
+
+
+
+
+SELECT
+	t.client_id AS user_id 
+FROM
+	Trips AS t UNION
+SELECT
+	t.driver_id AS user_id 
+FROM
+	Trips AS t;
