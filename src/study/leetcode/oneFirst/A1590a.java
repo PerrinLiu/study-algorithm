@@ -12,23 +12,48 @@ import java.util.List;
 // @lc code=start
 public class A1590a {
     public static void main(String[] args) {
-        int[] nums = { 26, 19, 11, 14, 18, 4, 7, 1, 30, 23, 19, 8, 10, 6, 26, 3 };
-        int p = 26;
-        Solution solution = new Solution();
-        System.out.println(solution.minSubarray(nums, p));
+        int[] nums = { 3,6,8,1};
+        int p = 8;
+        System.out.println(minSubarray1(nums, p));
+        System.out.println(minSubarray2(nums, p));
     }
-}
 
-class Solution {
-    public int minSubarray(int[] nums, int p) {
+    public static  int minSubarray2(int[] nums,int p ){
+        long sum = 0;
+        for (long num : nums) {
+            sum += num;
+        }
+        if (sum < p) {
+            return -1;
+        }
+        if( sum % p == 0) {
+            return 0;
+        }
+        int res = 1;
+        while(res<nums.length){
+            for (int i = 0; i < nums.length; i++) {
+                int tabSum = nums[i];
+                for (int j = i + 1; j < res+i && j!=nums.length; j++) {
+                    tabSum += nums[j];
+                }
+                if ((sum - tabSum) % p == 0) {
+                    return i+1;
+                }
+            }
+            res++;
+
+        }
+        return -1;
+    }
+
+    public static int minSubarray1(int[] nums, int p) {
         int length = nums.length;
         int res = 0;
         long sum = 0;
         HashMap<Long, Integer> has = new HashMap<>();
-        for (int i = 0; i < length; i++) {
-            long num = nums[i];
+        for (long num : nums) {
             has.put(num, has.get(num) == null ? 1 : has.get(num) + 1);
-            sum += nums[i];
+            sum += num;
         }
         if (sum < p) {
             return -1;
@@ -40,9 +65,8 @@ class Solution {
         int count = 0;
         long target = d;
         List<Long> list = new ArrayList<>();
-        while (d != 0 && count < length) {
-            HashMap<Long, Integer> temp = new HashMap<>();
-            temp.putAll(has);
+        while (count < length) {
+            HashMap<Long, Integer> temp = new HashMap<>(has);
             for (long i = target; i > 0; i--) {
                 int num = temp.getOrDefault(i, 0);
                 if (num == 0) {
@@ -67,4 +91,3 @@ class Solution {
         return -1;
     }
 }
-// @lc code=end
