@@ -33,7 +33,7 @@ public class B23MergeKLists {
 //    输入：lists = []
 //    输出：[]
 
-    //    示例 3：
+//    示例 3：
 //    输入：lists = [[]]
 //    输出：[]
 //
