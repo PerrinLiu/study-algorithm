@@ -1,10 +1,10 @@
 package study.leetcode.oneFirst;
 
-import study.TimingTemplate;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import study.TimingTemplate;
 
 /**
  * 16最接近三和
@@ -13,34 +13,34 @@ import java.util.List;
  * @date 2024/04/28
  */
 public class A16threeSumClosest {
-    //    16. 最接近的三数之和
-//    给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。
-//    中等
-//    返回这三个数的和。
-//
-//    假定每组输入只存在恰好一个解。
-//
-//
-//
-//    示例 1：
-//
-//    输入：nums = [-1,2,1,-4], target = 1
-//    输出：2
-//    解释：与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。
-//    示例 2：
-//
-//    输入：nums = [0,0,0], target = 1
-//    输出：0
-//
-//
-//    提示：
-//
-//            3 <= nums.length <= 1000
-//            -1000 <= nums[i] <= 1000
-//            -104 <= target <= 104
+    // 16. 最接近的三数之和
+    // 给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。
+    // 中等
+    // 返回这三个数的和。
+    //
+    // 假定每组输入只存在恰好一个解。
+    //
+    //
+    //
+    // 示例 1：
+    //
+    // 输入：nums = [-1,2,1,-4], target = 1
+    // 输出：2
+    // 解释：与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。
+    // 示例 2：
+    //
+    // 输入：nums = [0,0,0], target = 1
+    // 输出：0
+    //
+    //
+    // 提示：
+    //
+    // 3 <= nums.length <= 1000
+    // -1000 <= nums[i] <= 1000
+    // -104 <= target <= 104
     public static void main(String[] args) {
         List<Object> param = new ArrayList<>();
-        int[] nums = {-5, -5, -4, 0, 0, 3, 3, 4};
+        int[] nums = { -5, -5, -4, 0, 0, 3, 3, 4 };
         int target = -2;
         param.add(nums);
         param.add(target);
@@ -92,7 +92,7 @@ class threeSumClosest2 extends TimingTemplate {
     protected Object method(Object obj) {
         List<Object> params = (List<Object>) obj;
         int[] nums = (int[]) params.get(0);
-        int target = (int) params.get(1);   //{-5,-5,-4,-3,0,0,3,3,4};{-5,-5,-4,-3,0,0,3,3,4};{-5,-5,-4,-3,0,0,3,3,4};
+        int target = (int) params.get(1); // {-5,-5,-4,-3,0,0,3,3,4};{-5,-5,-4,-3,0,0,3,3,4};{-5,-5,-4,-3,0,0,3,3,4};
         Arrays.sort(nums);
         int len = nums.length;
         int res = Integer.MAX_VALUE;
