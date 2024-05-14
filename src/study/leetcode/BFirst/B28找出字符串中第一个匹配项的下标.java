@@ -6,7 +6,7 @@ package study.leetcode.BFirst;
  * @author llpy
  * @date 2024/04/20
  */
-public class B28StrStr {
+public class B28找出字符串中第一个匹配项的下标 {
 
     // 28. 找出字符串中第一个匹配项的下标
     // 简单

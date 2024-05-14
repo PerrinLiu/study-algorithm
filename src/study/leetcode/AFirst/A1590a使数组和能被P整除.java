@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 
 // @lc code=start
-public class A1590a {
+public class A1590a使数组和能被P整除 {
     public static void main(String[] args) {
         int[] nums = { 3, 6, 8, 1 };
         int p = 8;

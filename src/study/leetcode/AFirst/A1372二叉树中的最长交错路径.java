@@ -6,7 +6,7 @@ package study.leetcode.AFirst;
  * @author llpy
  * @date 2024/04/20
  */
-public class A1372LongestZigZag {
+public class A1372二叉树中的最长交错路径 {
     // 1372. 二叉树中的最长交错路径
     // 中等
     // 相关标签

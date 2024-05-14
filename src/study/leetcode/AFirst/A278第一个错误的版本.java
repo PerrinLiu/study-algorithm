@@ -1,3 +1,4 @@
+package study.leetcode.AFirst;
 /*
  * @lc app=leetcode.cn id=278 lang=java
  *
@@ -5,14 +6,13 @@
  */
 
 // @lc code=start
+
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
 
-import java.math.BigInteger;
-
-public class A278 extends VersionControl {
+public class A278第一个错误的版本 extends VersionControl {
     public static void main(String[] args) {
-        int firstBadVersion = new A278().firstBadVersion(2126753390);
+        int firstBadVersion = new A278第一个错误的版本().firstBadVersion(2126753390);
         System.out.println(firstBadVersion);
     }
 

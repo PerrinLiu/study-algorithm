@@ -7,7 +7,7 @@ package study.leetcode.GFirst;
 
 import java.util.HashMap;
 
-public class G70 {
+public class G70爬楼梯 {
 
     public static void main(String[] args) {
         G70Solution g70Solution = new G70Solution();

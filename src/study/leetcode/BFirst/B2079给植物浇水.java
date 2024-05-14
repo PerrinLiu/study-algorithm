@@ -3,7 +3,7 @@ package study.leetcode.BFirst;
 /**
  * @author Administrator
  */
-public class B2079WateringPlants {
+public class B2079给植物浇水 {
     // 2079. 给植物浇水 中等
     // 你打算用一个水罐给花园里的 n 株植物浇水。植物排成一行，从左到右进行标记，编号从 0 到 n - 1 。其中，第 i 株植物的位置是 x = i 。
     // x = -1 处有一条河，你可以在那里重新灌满你的水罐。

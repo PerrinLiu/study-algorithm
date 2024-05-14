@@ -9,10 +9,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 // @lc code=start
-class B2244 {
+class B2244完成所有任务需要的最少轮数 {
     public static void main(String[] args) {
         int[] task = { 2 };
-        B2244 b2244 = new B2244();
+        B2244完成所有任务需要的最少轮数 b2244 = new B2244完成所有任务需要的最少轮数();
         int minimumRounds = b2244.minimumRounds(task);
         System.out.println(minimumRounds);
     }

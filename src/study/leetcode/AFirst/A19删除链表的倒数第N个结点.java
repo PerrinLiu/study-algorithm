@@ -8,7 +8,7 @@ import study.entity.ListNode;
  * @author llpy
  * @date 2024/04/30
  */
-public class A19RemoveNthFromEnd {
+public class A19删除链表的倒数第N个结点 {
     // 19. 删除链表的倒数第 N 个结点
     // 中等
     // 提示

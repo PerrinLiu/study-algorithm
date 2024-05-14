@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Queue;
 
-public class I970 {
+public class I970腐烂的橘子 {
     // 994.
     // 腐烂的橘子 中等
     // 在给定的 m x n 网格 grid 中，每个单元格可以有以下三个值之一：

@@ -6,7 +6,7 @@ package study.leetcode.BFirst;
  * @author llpy
  * @date 2024/05/09
  */
-public class B2105MinimumRefill {
+public class B2105给植物浇水II {
     // 2105 中等
     // Alice 和 Bob 打算给花园里的 n 株植物浇水。
     // 植物排成一行，从左到右进行标记，编号从 0 到 n - 1 。

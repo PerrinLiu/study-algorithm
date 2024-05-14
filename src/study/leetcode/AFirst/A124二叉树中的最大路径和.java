@@ -9,7 +9,7 @@ package study.leetcode.AFirst;
 
 import study.entity.TreeNode;
 
-public class A124 {
+public class A124二叉树中的最大路径和 {
 
     public static void main(String[] args) {
         TreeNode treeNode = new TreeNode(-10, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));

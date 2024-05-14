@@ -8,7 +8,7 @@ import study.entity.ListNode;
  * @author llpy
  * @date 2024/04/20
  */
-public class B21MergeTwoLists {
+public class B21合并两个有序链表 {
     // 21. 合并两个有序链表
     // 简单
     // 相关标签

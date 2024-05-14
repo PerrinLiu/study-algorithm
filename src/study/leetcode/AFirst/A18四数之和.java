@@ -10,7 +10,7 @@ import java.util.*;
  * @author llpy
  * @date 2024/04/30
  */
-public class A18FourSum {
+public class A18四数之和 {
     // 18. 四数之和
     // 中等
     // 给你一个由 n 个整数组成的数组 nums ，和一个目标值 target 。

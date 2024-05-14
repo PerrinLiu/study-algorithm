@@ -9,7 +9,7 @@ import java.util.Set;
  * @author llpy
  * @date 2024/05/09
  */
-public class D421FindMaximumXOR {
+public class D421查找最大异或 {
     // 给你一个整数数组 nums ，返回 nums[i] XOR nums[j] 的最大运算结果，其中 0 ≤ i ≤ j < n 。
     //
     // 示例 1：

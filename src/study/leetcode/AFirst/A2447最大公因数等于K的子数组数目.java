@@ -6,7 +6,7 @@ package study.leetcode.AFirst;
  */
 
 // @lc code=start
-public class A2447 {
+public class A2447最大公因数等于K的子数组数目 {
     public static void main(String[] args) {
         int[] nums = { 128761, 2346412 };
         int k = 3;

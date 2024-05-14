@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class A1078 {
+class A1078Bigram分词 {
     public static void main(String[] args) {
         String text = "alice is a good girl she is a good student";
         String first = "a", second = "good";
-        String[] ocurrences = new A1078().findOcurrences(text, first, second);
+        String[] ocurrences = new A1078Bigram分词().findOcurrences(text, first, second);
         System.out.println(Arrays.toString(ocurrences));
     }
 

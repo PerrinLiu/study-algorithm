@@ -12,7 +12,7 @@ import study.TimingTemplate;
  * @author llpy
  * @date 2024/04/28
  */
-public class A16threeSumClosest {
+public class A16最接近的三数之和 {
     // 16. 最接近的三数之和
     // 给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。
     // 中等

@@ -8,7 +8,7 @@ import study.TimingTemplate;
  * @author llpy
  * @date 2024/04/28
  */
-public class H8MyAtoi {
+public class H8字符串转换整数 {
     // 8. 字符串转换整数 (atoi) 中等
     // 相关标签
     // 相关企业

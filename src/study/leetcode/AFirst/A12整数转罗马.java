@@ -10,7 +10,7 @@ import java.util.HashMap;
  * @author llpy
  * @date 2024/04/28
  */
-public class A12IntToRoman {
+public class A12整数转罗马 {
     // 罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。
     // 中等
     //

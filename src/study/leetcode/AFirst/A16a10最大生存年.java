@@ -10,7 +10,7 @@ import java.util.List;
  * @author llpy
  * @date 2024/05/09
  */
-public class A16a10MaxAliveYear {
+public class A16a10最大生存年 {
     // 给定 N 个人的出生年份和死亡年份，第 i 个人的出生年份为 birth[i]，死亡年份为 death[i]，实现一个方法以计算生存人数最多的年份。
     // 中等
     // 你可以假设所有人都出生于 1900 年至 2000 年（含 1900 和 2000 ）之间。

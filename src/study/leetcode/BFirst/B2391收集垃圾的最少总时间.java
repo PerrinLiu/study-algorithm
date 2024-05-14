@@ -5,7 +5,7 @@ package study.leetcode.BFirst;
  * [2391] 收集垃圾的最少总时间
  */
 
-public class B2391Solution {
+public class B2391收集垃圾的最少总时间 {
 
     public static void main(String[] args) {
         B291 solution = new B291();

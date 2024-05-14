@@ -12,7 +12,7 @@ import java.util.List;
  * @author llpy
  * @date 2024/05/05
  */
-public class B23MergeKLists {
+public class B23合并K个升序链表 {
     // 23. 合并 K 个升序链表 困难
     // 给你一个链表数组，每个链表都已经按升序排列。
     // 请你将所有链表合并到一个升序链表中，返回合并后的链表。
