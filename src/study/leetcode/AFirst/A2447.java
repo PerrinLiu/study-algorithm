@@ -1,4 +1,4 @@
-package study.leetcode.BFirst;
+package study.leetcode.AFirst;
 /*
  * @lc app=leetcode.cn id=2447 lang=java
  *
