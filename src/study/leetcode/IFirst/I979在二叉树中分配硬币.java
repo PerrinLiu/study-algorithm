@@ -5,6 +5,9 @@ package study.leetcode.IFirst;
  * [979] 在二叉树中分配硬币
  */
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 // @lc code=start
 
 import study.entity.TreeNode;
@@ -31,8 +34,28 @@ class I979在二叉树中分配硬币 {
         System.out.println(distributeCoins);
     }
 
+    int move = 0;
+
     public int distributeCoins(TreeNode root) {
-        return 0;
+        dfs(root);
+        return move;
     }
+
+    public int dfs(TreeNode root) {
+        int moveleft = 0;
+        int moveright = 0;
+        if (root == null) {
+            return 0;
+        }
+        if (root.left != null) {
+            moveleft = dfs(root.left);
+        }
+        if (root.right != null) {
+            moveright = dfs(root.right);
+        }
+        move += Math.abs(moveleft) + Math.abs(moveright);
+        return moveleft + moveright + root.val - 1;
+    }
+
 }
 // @lc code=end
