@@ -2,7 +2,7 @@ package study.leetcode.BFirst;
 /*
  * @lc app=leetcode.cn id=2391 lang=java
  *
- * [2391] 收集垃圾的最少总时间
+ * [2391] 收集垃圾的最少总时间  中等
  */
 
 public class B2391收集垃圾的最少总时间 {

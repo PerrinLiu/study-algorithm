@@ -3,7 +3,7 @@ package study.leetcode.BFirst;
 import study.entity.ListNode;
 
 /**
- * b24交换对
+ * 两两交换链表中的节点 中等
  *
  * @author llpy
  * @date 2024/05/07

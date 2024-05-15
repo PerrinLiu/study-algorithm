@@ -2,7 +2,7 @@ package study.leetcode.BFirst;
 /*
  * @lc app=leetcode.cn id=2589 lang=java
  *
- * [2589] 完成所有任务的最少时间
+ * [2589] 完成所有任务的最少时间  困难
  */
 
 // @lc code=start

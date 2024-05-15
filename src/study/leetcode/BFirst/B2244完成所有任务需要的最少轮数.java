@@ -2,7 +2,7 @@ package study.leetcode.BFirst;
 /*
  * @lc app=leetcode.cn id=2244 lang=java
  *
- * [2244] 完成所有任务需要的最少轮数
+ * [2244] 完成所有任务需要的最少轮数 中等
  */
 
 import java.util.Arrays;
