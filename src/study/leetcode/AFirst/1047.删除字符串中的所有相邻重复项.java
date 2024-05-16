@@ -5,12 +5,12 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution1047 {
     public static void main(String[] args) {
         // String str = "azxxzy";
         // String str = "abbaca";
         String str = "aaaaaaaa";
-        System.out.println(new Solution().removeDuplicates(str));
+        System.out.println(new Solution1047().removeDuplicates(str));
     }
 
     public String removeDuplicates(String s) {
