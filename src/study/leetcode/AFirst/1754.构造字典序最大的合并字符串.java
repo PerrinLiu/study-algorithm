@@ -1,3 +1,4 @@
+package study.leetcode.AFirst;
 /*
  * @lc app=leetcode.cn id=1754 lang=java
  *
@@ -5,9 +6,9 @@
  */
 
 // @lc code=start
-class Solution {
+class A1754Solution {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        A1754Solution solution = new A1754Solution();
         // String largestMerge = solution.largestMerge("ddddddddydvdddvvdddf",
         // "yydyyyyyyfyydyyfyyyydfyd");
 
