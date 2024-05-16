@@ -5,9 +5,6 @@ package study.leetcode.IFirst;
  * [979] 在二叉树中分配硬币
  */
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 // @lc code=start
 
 import study.entity.TreeNode;

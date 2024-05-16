@@ -1,3 +1,4 @@
+package study.leetcode.IFirst;
 /*
  * @lc app=leetcode.cn id=917 lang=java
  *
@@ -5,10 +6,10 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution917 {
     public static void main(String[] args) {
         String s = "ab-cd";
-        System.out.println(new Solution().reverseOnlyLetters(s));
+        System.out.println(new Solution917().reverseOnlyLetters(s));
     }
 
     public String reverseOnlyLetters(String s) {
