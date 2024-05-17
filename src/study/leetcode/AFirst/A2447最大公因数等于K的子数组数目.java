@@ -53,7 +53,7 @@ class A2447Solution {
 
 // @lc code=end
 
-class Solution {
+class Solution2447 {
     public int subarrayGCD(int[] nums, int k) {
         int n = nums.length, l = 0, r = 0, f = nums[r], c = 0;
         while (r < n) {

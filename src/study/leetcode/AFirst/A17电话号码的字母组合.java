@@ -36,7 +36,7 @@ public class A17电话号码的字母组合 {
     public static void main(String[] args) {
         TimingTemplate method17 = new method17();
         method17.run("23");
-        TimingTemplate solution = new Solution();
+        TimingTemplate solution = new Solution17();
         solution.run("234");
     }
 }
@@ -83,7 +83,7 @@ class method17 extends TimingTemplate {
     }
 }
 
-class Solution extends TimingTemplate {
+class Solution17 extends TimingTemplate {
     @Override
     protected Object method(Object s) {
         String str = (String) s;

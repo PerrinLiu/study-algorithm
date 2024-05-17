@@ -14,7 +14,7 @@ public class A01a01IsUnique {
     // 简单
     public static void main(String[] args) {
         String str = "pop";
-        System.out.println(new Solution().isUnique2(str));
+        System.out.println(new SolutionA01a01().isUnique2(str));
 
         int num = 0b11110001;
         int i = num >> 1;
@@ -50,7 +50,7 @@ public class A01a01IsUnique {
 // Related Topics 位运算 哈希表 字符串 排序 👍 327 👎 0
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class SolutionA01a01 {
     public boolean isUnique(String astr) {
         List<Character> list = new ArrayList<>();
         for (int i = 0; i < astr.length(); i++) {

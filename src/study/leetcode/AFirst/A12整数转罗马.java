@@ -1,4 +1,3 @@
-package study.leetcode.AFirst;
 
 import study.TimingTemplate;
 
