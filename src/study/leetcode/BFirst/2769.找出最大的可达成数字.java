@@ -10,4 +10,5 @@ class Solution2769 {
         return num + t * 2;
     }
 }
+
 // @lc code=end
