@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.TreeMap;
 
-class Solution {
+class Solution826 {
     public static void main(String[] args) {
         // int[] arr1 = { 2, 4, 6, 8, 10 };
         // int[] arr2 = { 10, 20, 30, 40, 50 };
@@ -21,7 +21,7 @@ class Solution {
         // int[] arr1 = { 5, 50, 92, 21, 24, 70, 17, 63, 30, 53 };
         // int[] arr2 = { 68, 100, 3, 99, 56, 43, 26, 93, 55, 25 };
         // int[] arr3 = { 96, 3, 55, 30, 11, 58, 68, 36, 26, 1 };
-        System.out.println(new Solution().maxProfitAssignment2(arr1, arr2, arr3));
+        System.out.println(new Solution826().maxProfitAssignment2(arr1, arr2, arr3));
     }
 
     TreeMap<Integer, Integer> map = new TreeMap<>();
