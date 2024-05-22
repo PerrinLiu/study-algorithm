@@ -49,24 +49,36 @@ class Solution2225 {
     }
 
     public List<List<Integer>> findWinners2(int[][] matches) {
+        //初始化返回结果
         List<List<Integer>> res = new ArrayList<>();
+        //创建全胜以及失败一场的玩家集合
         List<Integer> winner = new ArrayList<>();
         List<Integer> loser = new ArrayList<>();
+        //将两个集合加入返回结果
         Collections.addAll(res, winner, loser);
         HashMap<Integer, Integer> map = new HashMap<>();
+        //遍历数组
         for (int[] arr : matches) {
+            //胜者
             int num1 = arr[0];
+            //败者
             int num2 = arr[1];
+            //这里表示的是，如果map中不存在num1这个数据，才会push
             map.putIfAbsent(num1, 0);
+            //这里表示的时，push num2时，如果不存在，则值为1，如果存在则在原先的值上+1
             map.put(num2, map.getOrDefault(num2, 0) + 1);
         }
+        //遍历map
         for (Integer keySet : map.keySet()) {
+            //如果没失败过，加入全胜集合
             if (map.get(keySet) == 0) {
                 winner.add(keySet);
+                //失败过一次加入另一个集合
             } else if (map.get(keySet) == 1) {
                 loser.add(keySet);
             }
         }
+        //对两个集合进行排序
         Collections.sort(winner);
         Collections.sort(loser);
         return res;

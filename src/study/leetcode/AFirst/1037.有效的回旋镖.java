@@ -1,4 +1,4 @@
-/*
+package study.leetcode.AFirst;/*
  * @lc app=leetcode.cn id=1037 lang=java
  *
  * [1037] 有效的回旋镖
