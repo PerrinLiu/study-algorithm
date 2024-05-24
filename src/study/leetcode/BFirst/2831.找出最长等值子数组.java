@@ -1,3 +1,4 @@
+package study.leetcode.BFirst;
 /*
  * @lc app=leetcode.cn id=2831 lang=java
  *
@@ -14,7 +15,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-class Solution {
+class Solution2831 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Collections.addAll(list, 1, 3, 2, 3, 1, 3);
@@ -23,7 +24,7 @@ class Solution {
         Collections.addAll(list, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2);
         // Collections.addAll(list, 1);
         int k = 3;
-        System.out.println(new Solution().longestEqualSubarray5(list, k));
+        System.out.println(new Solution2831().longestEqualSubarray5(list, k));
     }
 
     public int longestEqualSubarray4(List<Integer> nums, int k) {
