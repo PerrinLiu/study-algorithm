@@ -1,3 +1,4 @@
+package study.leetcode.BFirst;
 /*
  * @lc app=leetcode.cn id=2462 lang=java
  *
@@ -15,7 +16,7 @@ import java.util.TreeSet;
 import java.util.Map.Entry;
 import java.util.PriorityQueue;
 
-class Solution {
+class Solution2462 {
     public static void main(String[] args) {
         // int[] costs = { 17, 12, 10, 2, 7, 2, 11, 20, 8 };
         // int[] costs = { 93, 287, 44, 470, 755, 720, 147, 917, 624, 373, 138, 498,
@@ -26,7 +27,7 @@ class Solution {
                 42, 53, 98, 69, 64, 40, 60, 23, 99, 83, 5, 21, 76, 34 };
         int k = 32;
         int candidates = 2;
-        System.out.println(new Solution().totalCost2(costs, k, candidates));
+        System.out.println(new Solution2462().totalCost2(costs, k, candidates));
     }
 
     public long totalCost(int[] costs, int k, int candidates) {
