@@ -5,9 +5,9 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution1358 {
     public static void main(String[] args) {
-        System.out.println(new Solution().numberOfSubstrings1("abcabc"));
+        System.out.println(new Solution1358().numberOfSubstrings1("abcabc"));
     }
 
     public int numberOfSubstrings1(String s) {
