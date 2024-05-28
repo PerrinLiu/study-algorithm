@@ -9,10 +9,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class Solution2951 {
     public static void main(String[] args) {
         int[] arr = { 1, 4, 3, 8, 5 };
-        System.out.println(new Solution().findPeaks(arr));
+        System.out.println(new Solution2951().findPeaks(arr));
     }
 
     public List<Integer> findPeaks(int[] mountain) {
