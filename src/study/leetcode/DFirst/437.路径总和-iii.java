@@ -38,6 +38,7 @@ class Solution437 {
                 0, new TreeNode(1),
                 new TreeNode(1));
         System.out.println(new Solution437().pathSum(treeNode, 1));
+        System.out.println(new Solution437().pathSum1(treeNode, 1));
     }
 
     public int pathSum(TreeNode root, int targetSum) {
@@ -63,32 +64,32 @@ class Solution437 {
         return ret;
     }
 
-    // public int pathSum(TreeNode root, long targetSum) {
-    // if (root == null) {
-    // return 0;
-    // }
+    public int pathSum1(TreeNode root, long targetSum) {
+        if (root == null) {
+            return 0;
+        }
 
-    // int ret = rootSum(root, targetSum);
-    // ret += pathSum(root.left, targetSum);
-    // ret += pathSum(root.right, targetSum);
-    // return ret;
-    // }
+        int ret = rootSum(root, targetSum);
+        ret += pathSum1(root.left, targetSum);
+        ret += pathSum1(root.right, targetSum);
+        return ret;
+    }
 
-    // public int rootSum(TreeNode root, long targetSum) {
-    // int ret = 0;
+    public int rootSum(TreeNode root, long targetSum) {
+        int ret = 0;
 
-    // if (root == null) {
-    // return 0;
-    // }
-    // int val = root.val;
-    // if (val == targetSum) {
-    // ret++;
-    // }
+        if (root == null) {
+            return 0;
+        }
+        int val = root.val;
+        if (val == targetSum) {
+            ret++;
+        }
 
-    // ret += rootSum(root.left, targetSum - val);
-    // ret += rootSum(root.right, targetSum - val);
-    // return ret;
-    // }
+        ret += rootSum(root.left, targetSum - val);
+        ret += rootSum(root.right, targetSum - val);
+        return ret;
+    }
 
     // int res = 0;
     // List<TreeNode> list = new ArrayList<>();
