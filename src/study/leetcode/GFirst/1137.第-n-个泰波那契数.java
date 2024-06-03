@@ -8,9 +8,9 @@
 
 import java.util.HashMap;
 
-class Solution {
+class Solution1137 {
     public static void main(String[] args) {
-        System.out.println(new Solution().tribonacci(25));
+        System.out.println(new Solution1137().tribonacci(25));
     }
 
     HashMap<Integer, Integer> map = new HashMap<>();
