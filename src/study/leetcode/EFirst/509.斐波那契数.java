@@ -1,3 +1,4 @@
+package study.leetcode.EFirst;
 /*
  * @lc app=leetcode.cn id=509 lang=java
  *
@@ -8,12 +9,10 @@
 
 import java.util.HashMap;
 
-class Solution {
+class Solution509 {
     public static void main(String[] args) {
-        System.out.println(new Solution().fib(9));
+        System.out.println(new Solution509().fib(9));
     }
-
-    HashMap<Integer, Integer> map = new HashMap<>();
 
     public int fib(int n) {
         if (n < 2) {
@@ -27,6 +26,8 @@ class Solution {
         }
         return r;
     }
+
+    HashMap<Integer, Integer> map = new HashMap<>();
 
     public int fib1(int n) {
         if (map.get(n) != null) {
