@@ -1,3 +1,4 @@
+package study.leetcode.GFirst;
 /*
  * @lc app=leetcode.cn id=746 lang=java
  *
@@ -5,11 +6,11 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution746 {
     public static void main(String[] args) {
         // int[] cost = { 10, 15, 20 };
         int[] cost = { 1, 100, 1, 1, 100, 1 };
-        System.out.println(new Solution().minCostClimbingStairs(cost));
+        System.out.println(new Solution746().minCostClimbingStairs(cost));
     }
 
     public int minCostClimbingStairs(int[] cost) {
