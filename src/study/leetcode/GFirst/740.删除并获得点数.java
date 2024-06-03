@@ -1,3 +1,4 @@
+package study.leetcode.GFirst;
 /*
  * @lc app=leetcode.cn id=740 lang=java
  *
@@ -6,16 +7,12 @@
 
 // @lc code=start
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map.Entry;
-
-class Solution {
+class Solution740 {
     public static void main(String[] args) {
         // int[] nums = { 8, 7, 3, 8, 1, 4, 10, 10, 10, 2 };
         int[] nums = { 1, 2, 3, 4 };
         // int[] nums = { 4, 10, 10, 8, 1, 4, 10, 9, 7, 6 };
-        System.out.println(new Solution().deleteAndEarn(nums));
+        System.out.println(new Solution740().deleteAndEarn(nums));
     }
 
     public int deleteAndEarn(int[] nums) {
