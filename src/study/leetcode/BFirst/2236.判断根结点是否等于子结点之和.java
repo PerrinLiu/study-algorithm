@@ -23,7 +23,7 @@ import study.entity.TreeNode;
  * }
  * }
  */
-class Solution {
+class Solution2236 {
     public boolean checkTree(TreeNode root) {
         return root.val == root.left.val + root.right.val;
     }
