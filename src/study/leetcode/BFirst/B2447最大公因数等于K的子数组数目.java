@@ -6,17 +6,17 @@ package study.leetcode.AFirst;
  */
 
 // @lc code=start
-public class A2447最大公因数等于K的子数组数目 {
+public class B2447最大公因数等于K的子数组数目 {
     public static void main(String[] args) {
         int[] nums = { 128761, 2346412 };
         int k = 3;
-        A2447Solution a2447Solution = new A2447Solution();
+        B2447Solution a2447Solution = new B2447Solution();
         int res = a2447Solution.subarrayGCD(nums, k);
         System.out.println(res);
     }
 }
 
-class A2447Solution {
+class B2447Solution {
     public int subarrayGCD(int[] nums, int k) {
         int n = nums.length;
         int[] dp = new int[n];
