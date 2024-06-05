@@ -1,4 +1,3 @@
-package study.leetcode.HFirst;
 /*
  * @lc app=leetcode.cn id=867 lang=java
  *
@@ -11,7 +10,8 @@ import java.util.Arrays;
 
 class Solution867 {
     public static void main(String[] args) {
-        int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        // int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 } };
         System.out.println(Arrays.toString(new Solution867().transpose(matrix)));
     }
 
