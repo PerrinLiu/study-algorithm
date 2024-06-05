@@ -1,3 +1,4 @@
+package study.leetcode.CFirst;
 /*
  * @lc app=leetcode.cn id=326 lang=java
  *
@@ -5,7 +6,7 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution326 {
 
     public boolean isPowerOfThree(int n) {
         while (n != 0 && n % 3 == 0) {
