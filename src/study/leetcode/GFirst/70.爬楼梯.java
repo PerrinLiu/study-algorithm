@@ -1,3 +1,4 @@
+package study.leetcode.GFirst;
 /*
  * @lc app=leetcode.cn id=70 lang=java
  *
@@ -8,12 +9,12 @@
 
 import java.util.HashMap;
 
-class Solution {
+class Solution70 {
     // f(1) = 1; f(2) = 2;
     // f(3) = f(2) + f(1);
     // f(n) = f(n-1) + f(n-2);
     public static void main(String[] args) {
-        System.out.println(new Solution().climbStairs(5));
+        System.out.println(new Solution70().climbStairs(5));
     }
 
     HashMap<Integer, Integer> map = new HashMap<>();
