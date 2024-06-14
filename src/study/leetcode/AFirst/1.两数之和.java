@@ -1,3 +1,4 @@
+package study.leetcode.AFirst;
 /*
  * @lc app=leetcode.cn id=1 lang=java
  *
@@ -8,10 +9,10 @@
 
 import java.util.HashMap;
 
-class Solution {
+class Solution1 {
     public static void main(String[] args) {
         int[] nums = { -1, -2, -3, -4, -5 };
-        System.out.println(new Solution().twoSum(nums, -8));
+        System.out.println(new Solution1().twoSum(nums, -8));
     }
 
     public int[] twoSum(int[] nums, int target) {
