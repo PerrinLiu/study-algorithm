@@ -1,3 +1,4 @@
+package study.leetcode.BFirst;
 /*
  * @lc app=leetcode.cn id=2813 lang=java
  *
@@ -10,11 +11,11 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.HashSet;
 
-class Solution {
+class Solution2813 {
     public static void main(String[] args) {
         int[][] items = { { 10, 4 }, { 2, 2 }, { 3, 3 }, { 10, 4 } };
         int k = 3;
-        System.out.println(new Solution().findMaximumElegance(items, k));
+        System.out.println(new Solution2813().findMaximumElegance(items, k));
     }
 
     public long findMaximumElegance(int[][] items, int k) {
