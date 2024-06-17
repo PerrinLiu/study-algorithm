@@ -37,13 +37,13 @@ import study.entity.TreeNode;
  * }
  * }
  */
-class Solution {
+class Solution1367 {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(6)));
         TreeNode treeNode = new TreeNode(5, null,
                 new TreeNode(2, new TreeNode(4, new TreeNode(6, null, null), null), new TreeNode(1, null, null)));
         System.out.println(treeNode.toString());
-        System.out.println(new Solution().isSubPath(l1, treeNode));
+        System.out.println(new Solution1367().isSubPath(l1, treeNode));
     }
 
     public boolean isSubPath(ListNode head, TreeNode root) {

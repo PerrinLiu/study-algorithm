@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+class Solution2275 {
     public static void main(String[] args) {
         int[] candidates = { 10, 72, 58, 33, 36, 70, 12, 88, 9, 48, 78, 97, 87, 19, 78, 9, 47, 73 };
-        System.out.println(new Solution().largestCombination(candidates));
+        System.out.println(new Solution2275().largestCombination(candidates));
     }
 
     public int largestCombination1(int[] candidates) {

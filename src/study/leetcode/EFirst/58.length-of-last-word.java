@@ -58,7 +58,7 @@ package study.leetcode.EFirst;
 
 // @lcpr-template-end
 // @lc code=start
-class Solution {
+class Solution57 {
     public int lengthOfLastWord(String s) {
         int res = 0;
         for (int i = s.length() - 1; i > 0; i--) {
