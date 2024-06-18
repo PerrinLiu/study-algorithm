@@ -16,7 +16,7 @@ class Solution560 {
         System.out.println(new Solution560().subarraySum(nums, k));
     }
 
-    public int subarraySum1(int[] nums, int k) {
+    public int subarraySum(int[] nums, int k) {
         int count = 0, pre = 0;
         HashMap<Integer, Integer> mp = new HashMap<>();
         mp.put(0, 1);
@@ -30,7 +30,7 @@ class Solution560 {
         return count;
     }
 
-    public int subarraySum(int[] nums, int k) {
+    public int subarraySum1(int[] nums, int k) {
         int count = 0;
         for (int start = 0; start < nums.length; ++start) {
             int sum = 0;
