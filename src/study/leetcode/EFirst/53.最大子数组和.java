@@ -1,3 +1,4 @@
+package study.leetcode.EFirst;
 /*
  * @lc app=leetcode.cn id=53 lang=java
  *
@@ -5,10 +6,10 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution53 {
     public static void main(String[] args) {
         int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-        System.out.println(new Solution().maxSubArray(nums));
+        System.out.println(new Solution53().maxSubArray(nums));
     }
 
     public int maxSubArray(int[] nums) {
